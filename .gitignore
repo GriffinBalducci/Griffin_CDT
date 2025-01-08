@@ -23,3 +23,6 @@ data/
 
 # System files
 .DS_Store
+
+# Sensitive Data
+.api_keys.py

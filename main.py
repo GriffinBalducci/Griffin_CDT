@@ -3,6 +3,8 @@ from utils.bar_fetcher import fetch_data
 #from strategies.moving_average import moving_average_crossover
 from utils.paper_trader import PaperTrader
 
+import api_keys
+
 # Configurations
 SYMBOLS = ['BTC/USDT', 'ETH/USDT', 'XRP/USDT']
 TIMEFRAME = '5m'
@@ -16,7 +18,7 @@ def main():
         print(f"Trading {symbol}...")
 
         # Fetch market data for the current symbol
-        exchange = connect_to_exchange('your_api_key', 'your_api_secret', 'binance')
+        exchange = connect_to_exchange(api_keys.api_key, api_keys.api_secret, 'binance')
         data = fetch_data(exchange, symbol, TIMEFRAME)
         
         # Extract close prices for strategy
