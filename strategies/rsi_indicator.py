@@ -1,7 +1,7 @@
 import pandas as pd
 from ta.momentum import RSIIndicator
 
-def IndicateWithRSI(bars):
+def generate_rsi_signals(bars):
     # Configuration
     rsi_period = 14
     rsi_overbought = 70
