@@ -1,3 +1,5 @@
+# DEPRECATED CODE BELOW: DECIDED HA IS NOT A GOOD INDICATOR FOR MY TYPE OF TRADING
+
 import pandas as pd
 
 def calculate_heikin_ashi(bars):
@@ -61,4 +63,4 @@ def generate_ha_signals(ha_df):
             
     # Check for selling
     #else:
-    
+        # Check if little to no top wick or large bottom wick
